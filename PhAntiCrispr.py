@@ -1,10 +1,10 @@
 
 import tkinter as tk
-from tkinter import PhotoImage, filedialog
+from tkinter import filedialog
 import threading
 
 
-# git commit -m "primeiro commit"string inicial para o label de status
+# Defina uma string inicial para o label de status
 texto_status_padrao = "Aguardando seleção de arquivo..."
 
 # Dicionário de sequências alvo e nome do gene correspondente
@@ -31,7 +31,6 @@ sequencia_alvo = {"ATGAGCCGACCAACAGTCGTTACGGTGACGGAAACCCCCAGGAATCCGGGAAGCTACGAGG
 sequencia_alvo = {"ATGAGCCGACCAACAGTCGTTACGGTGACGGAAACCCCCAGGAATCCGGGAAGCTACGAGGTCAACGTAG AGCGGGATGGCAAAATGGTCGTTGGCCGGGCCCGCGCGGGAAGCGATCCCGGCGCAGCTGCGGCGAAGGC CATGCAGATGGCCATGGAGTGGGGGAGCCCGAACTACGTCATTCTCGGCAGCAACAAGGTTCTTGCGTTC ATACCGGAGCAACTGCGGGTGAAAATGTGA":"Acr"}
 sequencia_alvo = {"ATGACTAAGACCGCACAAATGATCGCTCAGCAGCACAAAGATACTGTCGCAGCGTGCGAAGCCGCCGAAG CCATCGCTATCGCAAAAGATCAGGTCTGGGATGGCGAGGGCTATACCAAGTACACGTTCGACGACAACAG CGTTCTGATCCAGTCGGGCACTACTCAGTACGCGATGGATGCCGACGACGCAGACAGCATCAAAGGCTAT GCGGACTGGCTGGACGACGAAGCTCGCACCGCAGAAGATTCAGAAATCAAGCGCCTGCTCGAAGCGGTCG AAGATGAAGCCTGA":"Acr"}
 
-  
 
 
 
@@ -89,7 +88,7 @@ def main():
     global texto_saida
     janela = tk.Tk()
     janela.title("PhAntiCRISPR")
-    janela.iconbitmap ("imagens\dna.ico.ico")
+    janela.iconbitmap("")
     janela.configure(background= "black")
     janela.resizable(False,False)
 
